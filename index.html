@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Ejercicio de selectores CSS y LAYOUT..</title>
+  <style>
+    html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+    .rojo {
+      color: red;
+    }
+
+    .azul {
+      color: blue;
+    }
+
+    body {
+      font-family: verdana;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    #encabezado {
+      background: #FF6634;
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+
+    h2 {
+      display: block;
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+    p {
+      margin-top: 3rem;
+      padding: 0 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      border: 4px solid #fff;
+      border-radius: .5rem;
+      display: inline-block;
+      padding: .5rem;
+      color: #fff;
+      background-color: rgb(85, 45, 16);
+    }
+
+    ul li:hover {
+      cursor: pointer;
+    }
+
+    #contenido {
+      background-color: #ebd2c4;
+      border-radius: 1rem;
+      padding: 1rem 0;
+      padding-bottom: 0;
+    }
+
+    #css {
+      background-color: #FFFF00;
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 34%;
+      display: inline-block;
+    }
+
+    #css_intro {
+      background-color: #33FF67;
+      border-radius: 1rem;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+    }
+
+    #css_flexbox {
+      background-color: #FF391C;
+      border-radius: 1rem;
+      padding: 1rem 0;
+      width: 49%;
+			float: right;
+      color: #fff;
+    }
+
+    #css_grid {
+      background-color: #CC33FF;
+      border-radius: 1rem;
+      padding: 1rem 0;
+      color: #fff;
+      width: 49%;
+			float: left;
+    }
+
+    #html {
+      background-color: #32CCFE;
+      border-radius: 1rem;
+      padding: 1rem;
+      width: 33%;
+			float: left;
+      position: relative;
+      left: 33%;
+    }
+
+    #conceptos {
+      background-color: #33FF67;
+      border-radius: 1rem;
+      padding: 1rem;
+      float: left;
+      position: relative;
+      left: -33%;
+      width: 33%;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 class="azul">Aquí mis nombres y apellidos</h2>
+    <h3 class="rojo">En el ˂ BODY ˃ solo coloque sus nombres y apellidos, LO DEMÁS del ˂ BODY ˃ NO se puede modificar
+      !!! <br />Solo modifique estilos en < STYLE> !!!</h3>
+    <hr />
+
+    <div id="encabezado">
+      <h1> LIBRO TECNOLOGÍAS WEB </h1>
+      <ul>
+        <li> Inicio </li>
+        <li> Capítulo 1 </li>
+        <li> Capítulo 2 </li>
+        <li> Capítulo 3 </li>
+      </ul>
+    </div>
+
+    <div id="contenido">
+      <h2>Contenido del libro</h2>
+
+      <p>
+        El contenido de este libro se estructura en tres apartados bien diferenciados:
+      </p>
+
+      <div id="css">
+        <div id="css_intro">
+          <h2>Introducción CSS</h2>
+          <p>
+            En la tercera y última parte se explica CSS, el lenguaje que se emplea para definir el formato y la
+            presentación de una página web. Se explica cómo utilizar el color, cómo definir la presentación del texto,
+            de las tablas y de los formularios; cómo realizar transformaciones y transiciones con el fin de diseñar una
+            página.
+          </p>
+        </div>
+        <div id="css_flexbox">
+          <h2>Flexbox</h2>
+          <p>
+            Flexbox es un módulo de diseño de CSS3 que se creó para mejorar la forma en la que se hace diseño
+            responsive, evitando así el uso de float, escribiendo menos código y facilitando el posicionamiento de
+            elementos, incluso no teniendo noción del tamaño de éstos. Básicamente la idea de Flexbox es poder alterar
+            el ancho, alto y posicionamiento de elementos de la mejor manera con el espacio del que disponemos.
+          </p>
+        </div>
+        <div id="css_grid">
+          <h2>GRID</h2>
+          <p>
+            CSS Grid es un sistema de maquetación web que divide la página en una cuadrícula o rejilla (grid) a partir
+            de la cual se pueden posicionar los diferentes elementos de manera más sencilla, versátil y coherente.
+          </p>
+        </div>
+      </div>
+
+      <div id="html">
+        <h2>HTML</h2>
+        <p>
+          En la segunda parte se trabaja HTML. Partiendo de la estructura básica de una página web, se explican las
+          etiquetas de HTML que se utilizan para definir el texto, los enlaces, las listas, las tablas, los formularios
+          y los elementos multimedia.
+        </p>
+      </div>
+
+      <div id="conceptos">
+        <h2>Conceptos Básicos</h2>
+        <p>
+          En la primera parte del libro se trabajan conceptos generales que son necesarios para poder desarrollar
+          páginas web; se explican conceptos de estructura física y estructura lógica (o estructura de navegación) de un
+          sitio web. Se detalla cómo influye la estructura física en las URL o direcciones que se emplean a la hora de
+          crear los enlaces de un sitio web. Pasando por el concepto de "estándar web", un término general que se emplea
+          para refererirse a los estándares que define su funcionamiento como HTML y CSS, empleados para el desarrollo
+          de las páginas web en el lado del cliente.
+        </p>
+      </div>
+      <!--ene2022-->
+    </div>
+
+</body>
+
+</html>
